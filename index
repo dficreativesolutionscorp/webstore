@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Page title -->
+    <title>DFI Rentals - Equipment Rental Solutions</title>
+    
+    <!-- Meta description for SEO -->
+    <meta name="description" content="DFI Rentals - Professional equipment rental solutions in Los Angeles">
+    
+    <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header component will be loaded here -->
+    <div id="header-placeholder"></div>
+    
+    <!-- Main content area -->
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <h1>Welcome to DFI Rentals</h1>
+            <!-- Add your homepage content here -->
+        </section>
+        
+        <!-- Additional sections -->
+        <section class="content">
+            <!-- Main page content goes here -->
+        </section>
+    </main>
+    
+    <!-- Footer component will be loaded here -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Script to load reusable components -->
+    <script>
+        // Load header component
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+            
+        // Load footer component
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    
+    <!-- Additional JavaScript files -->
+    <script src="js/script.js"></script>
+</body>
+</html>
